@@ -143,8 +143,13 @@ p {
   <p><i>Commited by: <b></b></i></p>
   
   <h2><code>git blame -C "filename"</code></h2>  
-  <p>Add description here</p>
-  <p><i>Commited by: <b></b></i></p>
+  <p><b>git blame</b> Annotates each line in the given file with information from the revision which last modified the line. Optionally, start annotating from the given revision.
+  <br>When specified one or more times, -L restricts annotation to the requested lines.
+  <br>The origin of lines is automatically followed across whole-file renames (currently there is no option to turn the rename-following off). To follow lines moved from one file to another, or to follow lines that were copied and pasted from another file, etc., see the -C and -M options.
+  <br>The report does not tell you anything about lines which have been deleted or replaced; you need to use a tool such as git diff or the "pickaxe" interface briefly mentioned in the following paragraph.
+  <br> For example: "git blame -L 40,60 foo" or "git blame -L 40,+21 foo" both give you the origin of lines 40-60 in file foo.
+  <br><b>Source: </b><a href=https://git-scm.com/docs/git-blame>https://git-scm.com/docs/git-blame</a></p>
+  <p><i>Commited by: <b>Patryk Krawiec</b></i></p>
   
   <h2><code>git branch "name"</code></h2>  
   <p>Add description here</p>
